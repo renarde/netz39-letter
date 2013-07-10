@@ -56,9 +56,14 @@
 \def\telextext{{\footnotesize Telex\/:}}
 \def\emailtext{{\footnotesize e--Mail\/:}}
 \def\httptext{{\footnotesize HTTP\/:}}
-\def\banktext{{\footnotesize Bankverbindung\/:}}
-\def\blztext{{\footnotesize BLZ}}
+\def\banktext{{\footnotesize Bank\/:}}
+\def\blztext{{\footnotesize Blz.}}
 \def\kontotext{{\footnotesize Kto.}}
+\def\vorstandtext{{\normalsize Vorstand:}}
+\def\umsatzidtext{{\footnotesize Umsatzsteuerid\/:}}
+\def\steueridtext{{\footnotesize Steuernummer\/:}}
+\def\registergerichttext{{\footnotesize Registergericht\/:}}
+\def\registernummertext{{\footnotesize Registernummer\/:}}
 \def\betrefftext{{\normalsize Betr.:}}
 \def\ihrzeichentext{\footnotesize\textsc{Ihr Zeichen}}
 \def\ihrschreibentext{\footnotesize\textsc{Ihr Schreiben vom}}
@@ -69,6 +74,7 @@
   M\"arz\or April\or Mai\or Juni\or Juli\or August\or September\or
   Oktober\or November\or Dezember\fi \space\number\year}
 
+  
 \DeclareOption{10pt}{\def\@schrift{0}}
 \DeclareOption{11pt}{\def\@schrift{1}}
 \DeclareOption{12pt}{\def\@schrift{2}}
@@ -100,9 +106,14 @@
   \def\telextext{{\footnotesize Telex\/:}}
   \def\emailtext{{\footnotesize e--Mail\/:}}
   \def\httptext{{\footnotesize HTTP\/:}}
-  \def\banktext{{\footnotesize Bankverbindung\/:}}
-  \def\blztext{{\footnotesize BLZ}}
+  \def\banktext{{\footnotesize Bank\/:}}
+  \def\blztext{{\footnotesize Blz.}}
   \def\kontotext{{\footnotesize Kto.}}
+  \def\vorstandtext{{\normalsize Vorstand:}}
+  \def\umsatzidtext{{\footnotesize Umsatzsteuerid\/:}}
+  \def\steueridtext{{\footnotesize Steuernummer\/:}}
+  \def\registergerichttext{{\footnotesize Registergericht\/:}}
+  \def\registernummertext{{\footnotesize Registernummer\/:}}
   \def\betrefftext{{\normalsize Betr.:}}
   \def\ihrzeichentext{\footnotesize\textsc{Ihr Zeichen}}
   \def\ihrschreibentext{\footnotesize\textsc{Ihr Schreiben vom}}
@@ -111,8 +122,10 @@
   \def\datumtext{\footnotesize\textsc{Datum}}
   \def\datum{\number\day.~\ifcase\month\or Januar\or Februar\or
     M\"arz\or April\or Mai\or Juni\or Juli\or August\or September\or
-    Oktober\or November\or Dezember\fi \space\number\year}}
+    Oktober\or November\or Dezember\fi \space\number\year}
+}
 
+    
 \DeclareOption{ngerman}{
   \def\sprache{ngerman}
   \def\telefontex{{\footnotesize Telefon\/:}}
@@ -120,9 +133,14 @@
   \def\telextext{{\footnotesize Telex\/:}}
   \def\emailtext{{\footnotesize e--Mail\/:}}
   \def\httptext{{\footnotesize HTTP\/:}}
-  \def\banktext{{\footnotesize Bankverbindung\/:}}
-  \def\blztext{{\footnotesize BLZ}}
+  \def\banktext{{\footnotesize Bank\/:}}
+  \def\blztext{{\footnotesize Blz.}}
   \def\kontotext{{\footnotesize Kto.}}
+  \def\vorstandtext{{\normalsize Vorstand:}}
+  \def\umsatzidtext{{\footnotesize Umsatzsteuerid\/:}}
+  \def\steueridtext{{\footnotesize Steuernummer\/:}}
+  \def\registergerichttext{{\footnotesize Registergericht\/:}}
+  \def\registernummertext{{\footnotesize Registernummer\/:}}
   \def\betrefftext{{\normalsize Betr.:}}
   \def\ihrzeichentext{\footnotesize\textsc{Ihr Zeichen}}
   \def\ihrschreibentext{\footnotesize\textsc{Ihr Schreiben vom}}
@@ -131,7 +149,8 @@
   \def\datumtext{\footnotesize\textsc{Datum}}
   \def\datum{\number\day.~\ifcase\month\or Januar\or Februar\or
     M\"arz\or April\or Mai\or Juni\or Juli\or August\or September\or
-    Oktober\or November\or Dezember\fi \space\number\year}}
+    Oktober\or November\or Dezember\fi \space\number\year}
+}
 
 \DeclareOption{english}{
   \def\sprache{english}
@@ -140,14 +159,19 @@
   \def\telextext{{\footnotesize Telex\/:}}
   \def\emailtext{{\footnotesize e--Mail\/:}}
   \def\httptext{{\footnotesize HTTP\/:}}
-  \def\banktext{{\footnotesize Bank\/:}} \def\blztext{{\footnotesize
-      code}} \def\kontotext{{\footnotesize acct}}
+  \def\banktext{{\footnotesize Bank\/:}} \def\blztext{{\footnotesize code}} \def\kontotext{{\footnotesize acct}}
+  \def\vorstandtext{{\normalsize Board:}}
+  \def\umsatzidtext{{\footnotesize VAT Reg. No.\/:}}
+  \def\steueridtext{{\footnotesize Tax No.\/:}}
+  \def\registergerichttext{{\footnotesize Register Court\/:}}
+  \def\registernummertext{{\footnotesize Register No.\/:}}
   \def\betrefftext{{\normalsize Subj.:}}
   \def\ihrzeichentext{\footnotesize\textsc{Your Ref.}}
   \def\ihrschreibentext{\footnotesize\textsc{Your Mail}}
   \def\meinzeichentext{\footnotesize\textsc{My Ref.}}
   \def\unserzeichentext{\footnotesize\textsc{Our Ref.}}
-  \def\datumtext{\footnotesize\textsc{Date}}}
+  \def\datumtext{\footnotesize\textsc{Date}}
+  }
 
 \DeclareOption{american}{
   \def\sprache{american}
@@ -156,14 +180,19 @@
   \def\telextext{{\footnotesize Telex\/:}}
   \def\emailtext{{\footnotesize e--Mail\/:}}
   \def\httptext{{\footnotesize HTTP\/:}}
-  \def\banktext{{\footnotesize Bank\/:}} \def\blztext{{\footnotesize
-      code}} \def\kontotext{{\footnotesize acct}}
+  \def\banktext{{\footnotesize Bank\/:}} \def\blztext{{\footnotesize code}} \def\kontotext{{\footnotesize acct}}
+  \def\vorstandtext{{\normalsize Board:}}
+  \def\umsatzidtext{{\footnotesize VAT Reg. No.\/:}}
+  \def\steueridtext{{\footnotesize Tax No.\/:}}
+  \def\registergerichttext{{\footnotesize Register Court\/:}}
+  \def\registernummertext{{\footnotesize Register No.\/:}} 
   \def\betrefftext{{\normalsize Subj.:}}
   \def\ihrzeichentext{\footnotesize\textsc{Your Ref.}}
   \def\ihrschreibentext{\footnotesize\textsc{Your Mail}}
   \def\meinzeichentext{\footnotesize\textsc{My Ref.}}
   \def\unserzeichentext{\footnotesize\textsc{Our Ref.}}
-  \def\datumtext{\footnotesize\textsc{Date}}}
+  \def\datumtext{\footnotesize\textsc{Date}}
+  }
 
 \ExecuteOptions{11pt,@sprache} \ProcessOptions
 \LoadClass[1\@schrift pt, a4paper, oneside, final]{letter}[1999/04/29]
@@ -210,6 +239,15 @@
 \def\Bank#1{\def\bank{#1}} \def\bank{}
 \def\BLZ#1{\def\blz{#1}} \def\blz{}
 \def\Konto#1{\def\konto{#1}} \def\konto{}
+
+\def\Vorsitz#1{\def\vorsitz{#1}} \def\vorsitz{}
+\def\Vertreter#1{\def\vertreter{#1}} \def\vertreter{}
+\def\Kassenwart#1{\def\kassenwart{#1}} \def\kassenwart{}
+
+\def\Registergericht#1{\def\registergericht{#1}} \def\registergericht{}
+\def\Registernummer#1{\def\registernummer{#1}} \def\registernummer{}
+\def\Umsatzsteuerid#1{\def\umsatzsteuerid{#1}} \def\umsatzsteuerid{}
+\def\Steuernummer#1{\def\steuernummer{#1}} \def\steuernummer{}
 
 \def\Postvermerk#1{\def\postvermerk{#1}} \def\postvermerk{}
 \def\Adresse#1{\def\adresse{#1}} \def\adresse{}
@@ -314,18 +352,37 @@
   \def\@oddhead{
     \unitlength1mm
     \begin{picture}(0,0)
-      %\put(-9, 3){\parbox{180mm}{\includegraphics[width=0.05\textwidth]{logo/logo19.png}}}
-      \put(-9, 3){\parbox{180mm}{\Large \ifklassisch \textsl{\name}
-          \else \textsc{\name} \fi \\ \normalsize \ifklassisch \textsl{
-             \strasse \quad \\ \ifx \zusatz\empty \else
-             \zusatz \quad \\ \fi \quad \ort \quad \ifx \land\empty \else \\
-             \land \quad \fi} \else \textsc{
-             \strasse \quad \\ \ifx \zusatz\empty \else
-             \zusatz \quad \\ \fi \ort \quad \ifx \land\empty \else \\
-             \land \quad \fi} \fi}}
-      \put(-9, -20){\parbox{180mm}{\hfill \includegraphics[width=0.35\textwidth]{logo/logo19.png}}}
+      %\put(-9, 3){\parbox{180mm}{\includegraphics[width=0.05\textwidth]{logo/logo19}}}
+      \put(-9, 3){\parbox{180mm}{\huge \name %\\ \normalsize \ifklassisch \textsl{
+%             \strasse \quad \\ \ifx \zusatz\empty \else
+%             \zusatz \quad \\ \fi \quad \ort \quad \ifx \land\empty \else \\
+%             \land \quad \fi} \else \textsc{
+%             \strasse \quad \\ \ifx \zusatz\empty \else
+%             \zusatz \quad \\ \fi \ort \quad \ifx \land\empty \else \\
+%             \land \quad \fi} \fi
+	      }}
+      \put(150, -16){\parbox{180mm}{ \includegraphics[width=0.15\textwidth]{logo/logo19}
+      \\
+      \name \\
+      \strasse \\
+      \ifx \zusatz\empty \else \zusatz \\ \fi
+      \ort \\
+      \ifx \land\empty \else \land \\ \fi
+      \\
+      \vorstandtext \\
+      \underline\vorsitz \\
+      \vertreter \\
+      \kassenwart
+%       }}
+%       \put(128,-32){\parbox{180mm}{
+%        \begin{tabular}{ll}
+%        \vorstandtext & \underline\vorstand \\    
+%         {} & \vertreter \\
+%         {} & \kassenwart
+%        \end{tabular}
+      }}
 \
-      \iftrennlinien \put(-9,-7){\rule{115mm}{0.5pt}} \fi
+      \iftrennlinien \put(-9,-7){\rule{145mm}{0.5pt}} \fi
       \iflochermarke \put(-20,- 130.50){\line(1,0){4}} \fi
       \iffaltmarken \put(-15,- 75.16){\line(1,0){3}}
       \put(-15,-182.16){\line(1,0){3}} \fi
@@ -347,14 +404,18 @@
     \hfill}
   \def\@oddfoot{\unitlength1mm
     \begin{picture}(0,0)
-      \put(-9,0){\parbox{180mm}{\footnotesize \iftrennlinien
-          \rule{180mm}{0.5pt} \fi
+      \put(-9,0){\parbox[][][t]{180mm}{
+      \footnotesize \iftrennlinien
+        \rule{180mm}{0.5pt} \fi
           \begin{tabular}{ll}
             \ifx \telefon\empty \else \telefontex & \telefon \\ \fi \ifx
             \telefax\empty \else \telefaxtext & \telefax \\ \fi \ifx
             \telex\empty \else \telextext & \telex \\ \fi \ifx
             \email\empty \else \emailtext & \email \\ \fi \ifx
             \http\empty \else \httptext & \http \\ \fi \
+          \end{tabular} \ifcase\@ptsize\hspace{5em}\or \hspace{2.5em}\or  \hspace{0em} \fi
+          \begin{tabular}{ll}
+            \ifx \registergericht\empty \else \registergerichttext & \registergericht \\ \fi \ifx \registernummer\empty \else \registernummertext & \registernummer \\ \fi \ifx \umsatzsteuerid\empty \else \umsatzidtext & \umsatzsteuerid \\ \fi \ifx \steuernummer\empty \else \steueridtext & \steuernummer \\ \fi \
           \end{tabular}\hfill
           \begin{tabular}{ll}
             \ifx \bank\empty \else \ifx \blz\empty \else \ifx
@@ -366,10 +427,11 @@
 
 \def\ps@regularpage{ \headheight36pt\def\@oddhead{\unitlength1mm
     \begin{picture}(0,0)
-      \put(-9,3){\makebox(180,15){\normalsize \ifklassisch \textsl{
-        {\Large\quad}\name\hfill\datum\hfill\pagename\ \thepage\quad}
-        \else \textsc{{\Large\quad}\name\hfill\datum\hfill\pagename\
-        \thepage\quad} \fi}}
+      \put(-9,3){\makebox(180,15){\normalsize \ifklassisch 
+        {\Large\quad}\name\hfill\datum\hfill\pagename\ \thepage\quad
+        \else 
+        {\Large\quad}\name\hfill\datum\hfill\pagename\
+        \thepage\quad} \fi}
       \iftrennlinien \put(-9,0){\rule{180mm}{0.5pt}} \fi
     \end{picture}\hfill}
   \def\@oddfoot{\empty} \def\@evenhead{\@oddhead}
