@@ -43,6 +43,7 @@
 \ProvidesClass{g-brief}[\filedate\space v\fileversion\space g-brief class]
 
 \RequirePackage[pdftex]{graphicx}
+
 \RequirePackage[ngerman, num]{isodate}
 \monthyearsepgerman{}{}
 \daymonthsepgerman{}{}
@@ -101,7 +102,12 @@
 \DeclareOption{latin4}{\def\@docencoding{latin4}}
 \DeclareOption{latin5}{\def\@docencoding{latin5}}
 \DeclareOption{latin9}{\def\@docencoding{latin9}}
+\DeclareOption{utf8}{\def\@docencoding{utf8}}
+\DeclareOption{t1}{\def\@fontencoding{T1}}
 \DeclareOption{next}{\def\@docencoding{next}}
+\DeclareOption{sans}{\renewcommand{\familydefault}{\sfdefault}}
+% \usepackage[latin1]{inputenc} %Umlaute erkennen & ß, Umlaute werden als Bild dargestellt STRG+C der Umlaute nicht möglich
+% \usepackage[T1]{fontenc} %Lateinsiches Alphabet + Umlaute, kein Scharf ß, STRG+C der Umlaute möglich 
 
 \DeclareOption{german}{
   \def\sprache{german}
@@ -477,7 +483,47 @@
   {\RequirePackage{eurosym}}
   {}{}
 
-
-\endinput
 %%
 %% End of file `g-brief.cls'.
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Begin defs netz39
+
+ \Name                {Netz39 e.\,V.}
+ \Strasse             {Leibnizstra\ss e 32}
+ \Zusatz              {}
+ \RetourAdresse       {}
+ \Ort                 {39104 Magdeburg}
+ \Land                {}
+ 
+ \Telefon             {+49\ 391\ 58245281}
+ \Telefax             {}
+ \Telex               {}
+ \HTTP                {http://www.netz39.de}
+ \EMail               {kontakt@netz39.de}
+ 
+ \Vorsitz             {Stefan Haun}
+ \Vertreter           {Frank Blaschke}
+ \Kassenwart          {David Kilias}
+ 
+ \Bank                {Volksbank Magdeburg eG}
+ \BLZ                 {810\ 932\ 74}
+ \Konto               {144\ 248\ 1}
+ 
+ \Registergericht     {Amtsgericht Stendal}
+ \Registernummer      {VR\ 3169}
+ \Umsatzsteuerid      {}
+ \Steuernummer        {}
+
+
+%%
+%% End defs netz39
+ 
+\endinput
