@@ -40,7 +40,7 @@
 \def\filename{g-brief.cls}
 \NeedsTeXFormat{LaTeX2e}[2001/06/01]
 
-\ProvidesClass{g-brief}[\filedate\space v\fileversion\space g-brief class]
+\ProvidesClass{g-brief-ntz39}[\filedate\space v\fileversion\space g-brief-ntz39 class]
 
 \RequirePackage[pdftex]{graphicx}
 
