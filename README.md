@@ -24,8 +24,8 @@ UPDATE:
 * jetzt neu sans serif -- einschalten:  \documentclass[sans]g-brief-ntz39}, ausschalten: rausnehmen
 * moved Vorstand, etc. in die cls.
 * moved \Unterschrift, etc. nach \begin{document}: dann kann man auch dort ä,ö,... verwenden
+* der Tux hat das jpg umgewandelt \o/
 
 STILL TO DO:
-* jpg in code umwandeln \o/
 * fontenc (\usepackage{T1}[fontenc]) geht noch nicht
 * schickes cls mit Farben O.o
