@@ -40,7 +40,7 @@
 \def\filename{g-brief.cls}
 \NeedsTeXFormat{LaTeX2e}[2001/06/01]
 
-\ProvidesClass{g-brief}[\filedate\space v\fileversion\space g-brief class]
+\ProvidesClass{g-brief-ntz39}[\filedate\space v\fileversion\space g-brief-ntz39 class]
 
 \RequirePackage[pdftex]{graphicx}
 \RequirePackage{tikz}
@@ -62,8 +62,8 @@
 \def\emailtext{{\footnotesize e--Mail\/:}}
 \def\httptext{{\footnotesize HTTP\/:}}
 \def\banktext{{\footnotesize Bank\/:}}
-\def\blztext{{\footnotesize Blz.}}
-\def\kontotext{{\footnotesize Kto.}}
+\def\ibantext{{\footnotesize IBAN\/:}}
+\def\bictext{{\footnotesize BIC\/:}}
 \def\vorstandtext{{\footnotesize Vorstand:}}
 \def\umsatzidtext{{\footnotesize Umsatzsteuerid\/:}}
 \def\steueridtext{{\footnotesize Steuernummer\/:}}
@@ -118,9 +118,9 @@
   \def\emailtext{{\footnotesize e--Mail\/:}}
   \def\httptext{{\footnotesize HTTP\/:}}
   \def\banktext{{\footnotesize Bank\/:}}
-  \def\blztext{{\footnotesize Blz.}}
-  \def\kontotext{{\footnotesize Kto.}}
   \def\vorstandtext{{\footnotesize Vorstand:}}
+  \def\ibantext{{\footnotesize IBAN\/:}}
+  \def\bictext{{\footnotesize BIC\/:}}  
   \def\umsatzidtext{{\footnotesize Umsatzsteuerid\/:}}
   \def\steueridtext{{\footnotesize Steuernummer\/:}}
   \def\registergerichttext{{\footnotesize Registergericht\/:}}
@@ -146,8 +146,8 @@
   \def\emailtext{{\footnotesize e--Mail\/:}}
   \def\httptext{{\footnotesize HTTP\/:}}
   \def\banktext{{\footnotesize Bank\/:}}
-  \def\blztext{{\footnotesize Blz.}}
-  \def\kontotext{{\footnotesize Kto.}}
+  \def\ibantext{{\footnotesize IBAN\/:}}
+  \def\bictext{{\footnotesize BIC\/:}}
   \def\vorstandtext{{\footnotesize Vorstand:}}
   \def\umsatzidtext{{\footnotesize Umsatzsteuerid\/:}}
   \def\steueridtext{{\footnotesize Steuernummer\/:}}
@@ -172,7 +172,7 @@
   \def\telextext{{\footnotesize Telex\/:}}
   \def\emailtext{{\footnotesize e--Mail\/:}}
   \def\httptext{{\footnotesize HTTP\/:}}
-  \def\banktext{{\footnotesize Bank\/:}} \def\blztext{{\footnotesize code}} \def\kontotext{{\footnotesize acct}}
+  \def\banktext{{\footnotesize Bank\/:}} \def\ibantext{{\footnotesize code}} \def\bictext{{\footnotesize acct}}
   \def\vorstandtext{{\normalsize Board:}}
   \def\umsatzidtext{{\footnotesize VAT Reg. No.\/:}}
   \def\steueridtext{{\footnotesize Tax No.\/:}}
@@ -250,8 +250,8 @@
 \def\HTTP#1{\def\http{#1}} \def\http{}
 
 \def\Bank#1{\def\bank{#1}} \def\bank{}
-\def\BLZ#1{\def\blz{#1}} \def\blz{}
-\def\Konto#1{\def\konto{#1}} \def\konto{}
+\def\IBAN#1{\def\iban{#1}} \def\iban{}
+\def\BIC#1{\def\bic{#1}} \def\bic{}
 
 \def\Vorsitz#1{\def\vorsitz{#1}} \def\vorsitz{}
 \def\Vertreter#1{\def\vertreter{#1}} \def\vertreter{}
@@ -489,7 +489,7 @@
       \footnotesize \iftrennlinien
         \rule{180mm}{0.5pt} \fi
           \begin{tabular}{ll}
-            \vorstandtext &\underline{\vorsitz} \\
+            \vorstandtext & \vorsitz \\
              & \vertreter   \\
              & \kassenwart 
             %\ifx \telefon\empty \else \telefontex & \telefon \\ \fi \ifx
@@ -503,8 +503,8 @@
           \end{tabular}\hfill
           \begin{tabular}{ll}
             \banktext & \bank \\%\ifx \bank\empty \else \ifx \blz\empty \else \ifx
-            \blztext  & \blz \\
-            \kontotext & \konto%\konto\empty \else \banktext & \bank \\ & \blztext \space \blz
+            \ibantext  & \iban \\
+            \bictext & \bic%\konto\empty \else \banktext & \bank \\ & \blztext \space \blz
             %\\ & \kontotext \space \konto \\ \ \fi \fi \fi
           \end{tabular}}}
     \end{picture} \hfill}
@@ -574,13 +574,13 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
  
- \Vorsitz             {Stefan Haun}
- \Vertreter           {Frank Blaschke}
+ \Vorsitz             {Sebastian Hichert}
+ \Vertreter           {Tatjana Böttger}
  \Kassenwart          {David Kilias}
  
  \Bank                {Volksbank Magdeburg eG}
- \BLZ                 {810\ 932\ 74}
- \Konto               {144\ 248\ 1}
+ \IBAN                {DE71\ 8109\ 3274\ 0001\ 4424\ 81}
+ \BIC                 {GENODEF1MD1}
  
  \Registergericht     {Amtsgericht Stendal}
  \Registernummer      {VR\ 3169}
