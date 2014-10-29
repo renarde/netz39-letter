@@ -574,8 +574,8 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
  
- \Vorsitz             {Sebastian Hichert}
- \Vertreter           {Tatjana Böttger}
+ \Vorsitz             {René Meye}
+ \Vertreter           {Sebastian Mai}
  \Kassenwart          {David Kilias}
  
  \Bank                {Volksbank Magdeburg eG}
