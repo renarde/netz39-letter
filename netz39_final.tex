@@ -16,7 +16,7 @@
 %% -----------------------------------------------------------------------
 %% 
 %% It may be distributed under the terms of the LaTeX Project Public
-%% License (LPPL), as described in lppl.txt in the base LaTeX distribution.
+%% License LPPL), as described in lppl.txt in the base LaTeX distribution.
 %% Either version 1.1 or, at your option, any later version.
 %% 
 %% The latest version of this license is in
@@ -36,30 +36,18 @@
 \def\filedate{2008/07/15}
 \def\fileversion{4.0.2}
 
-\documentclass[11pt,ngerman,latin9,a4paper]{g-brief}
+\documentclass[12pt,ngerman,a4paper,utf8,sans,t1]{g-brief-ntz39}
+
+\usepackage[ngerman]{babel}
 
 \lochermarke
 \faltmarken
 \fenstermarken
-\trennlinien
+\unserzeichen
+ \trennlinien
 %% \klassisch
 
-\Name                {Netz39 e. V.}
-\Strasse             {Leibnizstra\ss e 32}
-\Zusatz              {}
-\RetourAdresse       {}
-\Ort                 {39104 Magdeburg}
-\Land                {}
-
-\Telefon             {+49\ 391\ 58245281}
-\Telefax             {}
-\Telex               {}
-\HTTP                {http://www.netz39.de}
-\EMail               {kontakt@netz39.de}
-
-\Bank                {Volksbank Magdeburg eG}
-\BLZ                 {810\ 932\ 74}
-\Konto               {144\ 248\ 1}
+\begin{document}
 
 \Unterschrift        {Manni Mitglied}
 
@@ -71,27 +59,29 @@
                       D-12345 Goldstadt
                       }
 
-\Betreff             {Foo f\"ur die Foobar}
-
 \Datum               {\today}
 \IhrZeichen          {}
 \IhrSchreiben        {}
 \MeinZeichen         {Netz39}
-\unserzeichen
+
+\Betreff             {Foo f\"ur die Foobar}
+
 \Anrede              {Sehr geehrte willige Geldgeber,}
 \Gruss               {Mit freundlichen Gr\"u\ss{}en}{1cm}
 
 \Anlagen             {}
 \Verteiler           {}
 
-\begin{document}
 \begin{g-brief}
 
-mit Bedauern m\"ussen wir Ihnen mitteilen, dass uns schon wieder das Foo f\"ur die Bar ausgegangen ist. Und obwohl wir durch unlautere Mittel versucht haben, die Mehreinnahmen aus der Mate-Kasse abzusch\"opfen, reicht dies bei Weitem nicht aus, um die Kosten f\"ur die Foobar zu decken.
+abcdefghijklmnopqrstuvwxyz
 
-Wir freuen uns Ihnen daher mitteilen zu k\"onnen, dass Sie uns ohne Bedingungen sofort einen 5 (in Worten: f\"unf)-stelligen Betrag \"uberweisen d\"urfen.
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-Wir danken im Voraus.
+äöüß
+
+1234567890
+
 
 \end{g-brief}
 \end{document}
