@@ -578,9 +578,9 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
  
- \Vorsitz             {René Meye}
+ \Vorsitz             {Michel Vorsprach}
  \Vertreter           {Sebastian Mai}
- \Kassenwart          {David Kilias}
+ \Kassenwart          {Carina Lederich}
  
  \Bank                {Volksbank Magdeburg eG}
  \IBAN                {DE71\ 8109\ 3274\ 0001\ 4424\ 81}
