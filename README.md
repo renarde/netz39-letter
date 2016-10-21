@@ -16,9 +16,6 @@ Change stuff (if you really need too!):
 * wenn Einträge für Vorstand, etc. nicht sollen: Zeilen 421:423 auskommentieren und 424:428 einkommentieren, in 434 den hinteren Teil benutzen, dito in 436, 437 einkommentieren
 * Datum ändern in: Day. Month (Wort) Jahr: Isopacket rausnehmen
 
-notwendiger Inhalt
-http://www.sgsv-sachsen.de/uploads/media/Vereinsbriefbogen_081215.pdf
-
 UPDATE:
 * jetzt neu mit utf8 -- entsprechendes encoding über \documentclass[...]g-brief-ntz39} einstellen, eg ...=utf8
 * jetzt neu sans serif -- einschalten:  \documentclass[sans]g-brief-ntz39}, ausschalten: rausnehmen
