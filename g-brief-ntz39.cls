@@ -5,34 +5,34 @@
 %% The original source files were:
 %%
 %% g-brief.dtx  (with options: `class')
-%% 
+%%
 %% =======================================================================
-%% 
+%%
 %% Copyright (C) 1991-2003 Michael Lenzen.
-%% 
+%%
 %% For additional copyright information see further down in this file.
-%% 
+%%
 %% This file is part of the G-BRIEF package.
 %% -----------------------------------------------------------------------
-%% 
+%%
 %% It may be distributed under the terms of the LaTeX Project Public
 %% License (LPPL), as described in lppl.txt in the base LaTeX distribution.
 %% Either version 1.1 or, at your option, any later version.
-%% 
+%%
 %% The latest version of this license is in
-%% 
+%%
 %%          http://www.latex-project.org/lppl.txt
-%% 
+%%
 %% LPPL Version 1.1 or later is part of all distributions of LaTeX
 %% version 1999/06/01 or later.
-%% 
-%% 
+%%
+%%
 %% Error reports in case of UNCHANGED versions to
-%% 
+%%
 %%                            <lenzen@lenzen.com>
 %%                            <m.lenzen@t-online.de>
-%% 
-%% 
+%%
+%%
 \def\filedate{2003/05/08}
 \def\fileversion{4.0.1}
 \def\filedate{2003/05/08}
@@ -80,7 +80,7 @@
 %  Oktober\or November\or Dezember\fi \space\number\year}
 \def\datum{\the\day.\the\month.\the\year}
 
-  
+
 \DeclareOption{10pt}{\def\@schrift{0}}
 \DeclareOption{11pt}{\def\@schrift{1}}
 \DeclareOption{12pt}{\def\@schrift{2}}
@@ -108,7 +108,7 @@
 \DeclareOption{next}{\def\@docencoding{next}}
 \DeclareOption{sans}{\renewcommand{\familydefault}{\sfdefault}}
 % \usepackage[latin1]{inputenc} %Umlaute erkennen & ß, Umlaute werden als Bild dargestellt STRG+C der Umlaute nicht möglich
-% \usepackage[T1]{fontenc} %Lateinsiches Alphabet + Umlaute, kein Scharf ß, STRG+C der Umlaute möglich 
+% \usepackage[T1]{fontenc} %Lateinsiches Alphabet + Umlaute, kein Scharf ß, STRG+C der Umlaute möglich
 
 \DeclareOption{german}{
   \def\sprache{german}
@@ -120,7 +120,7 @@
   \def\banktext{{\footnotesize Bank\/:}}
   \def\vorstandtext{{\footnotesize Vorstand:}}
   \def\ibantext{{\footnotesize IBAN\/:}}
-  \def\bictext{{\footnotesize BIC\/:}}  
+  \def\bictext{{\footnotesize BIC\/:}}
   \def\umsatzidtext{{\footnotesize Umsatzsteuerid\/:}}
   \def\steueridtext{{\footnotesize Steuernummer\/:}}
   \def\registergerichttext{{\footnotesize Registergericht\/:}}
@@ -137,7 +137,7 @@
   \def\datum{\the\day.\the\month.\the\year}
 }
 
-    
+
 \DeclareOption{ngerman}{
   \def\sprache{ngerman}
   \def\telefontex{{\footnotesize Telefon\/:}}
@@ -198,7 +198,7 @@
   \def\umsatzidtext{{\footnotesize VAT Reg. No.\/:}}
   \def\steueridtext{{\footnotesize Tax No.\/:}}
   \def\registergerichttext{{\footnotesize Register Court\/:}}
-  \def\registernummertext{{\footnotesize Register No.\/:}} 
+  \def\registernummertext{{\footnotesize Register No.\/:}}
   \def\betrefftext{{\normalsize Subj.:}}
   \def\ihrzeichentext{\footnotesize\textsc{Your Ref.}}
   \def\ihrschreibentext{\footnotesize\textsc{Your Mail}}
@@ -210,11 +210,11 @@
 \def\n39logo{
 	  %% Inline Logo
 	  \begin{tikzpicture}[
-	      y=0.8pt, 
-	      x=0.8pt, 
-	      yscale=-1, 
-	      inner sep=0pt, 
-	      outer sep=0pt, 
+	      y=0.8pt,
+	      x=0.8pt,
+	      yscale=-1,
+	      inner sep=0pt,
+	      outer sep=0pt,
 	      scale=0.2
 	  ]
 	  \begin{scope}[shift={(-448.05262,-67.70133)}]
@@ -273,7 +273,7 @@
 	  %% Logo End
 }
 
-  
+
 \ExecuteOptions{11pt,@sprache} \ProcessOptions
 \LoadClass[1\@schrift pt, a4paper, oneside, final]{letter}[1999/04/29]
 \normalsize
@@ -425,7 +425,7 @@
     \fi\strut} \ifx \anlagen\empty \else \vspace{4mm} \par \anlagen
   \par \fi \ifx \verteiler\empty \else \ifx \anlagen\empty
   \vspace{4mm}\par \fi \verteiler \fi }
-  
+
 \def\ps@firstpage{
   \renewcommand{\baselinestretch}{1.0}
   \ifcase \@ptsize\relax \normalsize \or \small \or \footnotesize \fi
@@ -461,7 +461,7 @@
 %       }}
 %       \put(128,-32){\parbox{180mm}{
 %        \begin{tabular}{ll}
-%        \vorstandtext & \underline\vorstand \\    
+%        \vorstandtext & \underline\vorstand \\
 %         {} & \vertreter \\
 %         {} & \kassenwart
 %        \end{tabular}
@@ -495,7 +495,7 @@
           \begin{tabular}{ll}
             \vorstandtext & \vorsitz \\
              & \vertreter   \\
-             & \kassenwart 
+             & \kassenwart
             %\ifx \telefon\empty \else \telefontex & \telefon \\ \fi \ifx
             %\telefax\empty \else \telefaxtext & \telefax \\ \fi \ifx
             %\telex\empty \else \telextext & \telex \\ \fi \ifx
@@ -517,9 +517,9 @@
 \def\ps@regularpage{ \headheight36pt\def\@oddhead{\unitlength1mm
     \begin{picture}(0,0)
       \put(-5,5){\makebox(10,10){\n39logo}\hfill}
-      \put(4.5,2){\makebox(170,15){\normalsize \ifklassisch 
+      \put(4.5,2){\makebox(170,15){\normalsize \ifklassisch
         {\Large\quad}\name\hfill\datum\hfill\pagename\ \thepage\quad
-        \else 
+        \else
         {\Large\quad}\name\hfill\datum\hfill\pagename\
         \thepage\quad} \fi}
       \iftrennlinien \put(-9,0){\rule{180mm}{0.5pt}} \fi
@@ -571,21 +571,21 @@
  \RetourAdresse       {}
  \Ort                 {39104 Magdeburg}
  \Land                {}
- 
+
  \Telefon             {+49\ 391\ 58245281}
  \Telefax             {}
  \Telex               {}
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
- 
- \Vorsitz             {Michel Vorsprach}
- \Vertreter           {Sebastian Mai}
- \Kassenwart          {Carina Lederich}
- 
+
+ \Vorsitz             {Sebastian Heerwald}
+ \Vertreter           {Tatjana Ruhl}
+ \Kassenwart          {Oskar Kirmis}
+
  \Bank                {Volksbank Magdeburg eG}
  \IBAN                {DE71\ 8109\ 3274\ 0001\ 4424\ 81}
  \BIC                 {GENODEF1MD1}
- 
+
  \Registergericht     {Amtsgericht Stendal}
  \Registernummer      {VR\ 3169}
  \Umsatzsteuerid      {}
@@ -594,5 +594,5 @@
 
 %%
 %% End defs netz39
- 
+
 \endinput
