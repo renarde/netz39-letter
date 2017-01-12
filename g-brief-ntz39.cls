@@ -5,34 +5,34 @@
 %% The original source files were:
 %%
 %% g-brief.dtx  (with options: `class')
-%% 
+%%
 %% =======================================================================
-%% 
+%%
 %% Copyright (C) 1991-2003 Michael Lenzen.
-%% 
+%%
 %% For additional copyright information see further down in this file.
-%% 
+%%
 %% This file is part of the G-BRIEF package.
 %% -----------------------------------------------------------------------
-%% 
+%%
 %% It may be distributed under the terms of the LaTeX Project Public
 %% License (LPPL), as described in lppl.txt in the base LaTeX distribution.
 %% Either version 1.1 or, at your option, any later version.
-%% 
+%%
 %% The latest version of this license is in
-%% 
+%%
 %%          http://www.latex-project.org/lppl.txt
-%% 
+%%
 %% LPPL Version 1.1 or later is part of all distributions of LaTeX
 %% version 1999/06/01 or later.
-%% 
-%% 
+%%
+%%
 %% Error reports in case of UNCHANGED versions to
-%% 
+%%
 %%                            <lenzen@lenzen.com>
 %%                            <m.lenzen@t-online.de>
-%% 
-%% 
+%%
+%%
 \def\filedate{2003/05/08}
 \def\fileversion{4.0.1}
 \def\filedate{2003/05/08}
@@ -80,7 +80,7 @@
 %  Oktober\or November\or Dezember\fi \space\number\year}
 \def\datum{\the\day.\the\month.\the\year}
 
-  
+
 \DeclareOption{10pt}{\def\@schrift{0}}
 \DeclareOption{11pt}{\def\@schrift{1}}
 \DeclareOption{12pt}{\def\@schrift{2}}
@@ -108,7 +108,7 @@
 \DeclareOption{next}{\def\@docencoding{next}}
 \DeclareOption{sans}{\renewcommand{\familydefault}{\sfdefault}}
 % \usepackage[latin1]{inputenc} %Umlaute erkennen & ß, Umlaute werden als Bild dargestellt STRG+C der Umlaute nicht möglich
-% \usepackage[T1]{fontenc} %Lateinsiches Alphabet + Umlaute, kein Scharf ß, STRG+C der Umlaute möglich 
+% \usepackage[T1]{fontenc} %Lateinsiches Alphabet + Umlaute, kein Scharf ß, STRG+C der Umlaute möglich
 
 \DeclareOption{german}{
   \def\sprache{german}
@@ -120,7 +120,7 @@
   \def\banktext{{\footnotesize Bank\/:}}
   \def\vorstandtext{{\footnotesize Vorstand:}}
   \def\ibantext{{\footnotesize IBAN\/:}}
-  \def\bictext{{\footnotesize BIC\/:}}  
+  \def\bictext{{\footnotesize BIC\/:}}
   \def\umsatzidtext{{\footnotesize Umsatzsteuerid\/:}}
   \def\steueridtext{{\footnotesize Steuernummer\/:}}
   \def\registergerichttext{{\footnotesize Registergericht\/:}}
@@ -137,7 +137,7 @@
   \def\datum{\the\day.\the\month.\the\year}
 }
 
-    
+
 \DeclareOption{ngerman}{
   \def\sprache{ngerman}
   \def\telefontex{{\footnotesize Telefon\/:}}
@@ -198,7 +198,7 @@
   \def\umsatzidtext{{\footnotesize VAT Reg. No.\/:}}
   \def\steueridtext{{\footnotesize Tax No.\/:}}
   \def\registergerichttext{{\footnotesize Register Court\/:}}
-  \def\registernummertext{{\footnotesize Register No.\/:}} 
+  \def\registernummertext{{\footnotesize Register No.\/:}}
   \def\betrefftext{{\normalsize Subj.:}}
   \def\ihrzeichentext{\footnotesize\textsc{Your Ref.}}
   \def\ihrschreibentext{\footnotesize\textsc{Your Mail}}
@@ -206,6 +206,73 @@
   \def\unserzeichentext{\footnotesize\textsc{Our Ref.}}
   \def\datumtext{\footnotesize\textsc{Date}}
   }
+
+\def\n39logo{
+	  %% Inline Logo
+	  \begin{tikzpicture}[
+	      y=0.8pt,
+	      x=0.8pt,
+	      yscale=-1,
+	      inner sep=0pt,
+	      outer sep=0pt,
+	      scale=0.2
+	  ]
+	  \begin{scope}[shift={(-448.05262,-67.70133)}]
+	    \path[color=black,fill=black,even odd rule,line width=16.000pt]
+	      (534.1205,161.8816) -- (534.1205,172.2877) -- (581.3732,172.2877) .. controls
+	      (571.8452,181.8308) and (562.3036,191.3603) .. (552.7463,200.8741) --
+	      (565.3389,200.8741) .. controls (585.4511,200.8741) and (601.7400,217.2036) ..
+	      (601.7400,237.3158) .. controls (601.7400,257.4280) and (585.4511,273.7170) ..
+	      (565.3389,273.7170) .. controls (545.2267,273.7170) and (528.8972,257.4280) ..
+	      (528.8972,237.3158) -- (518.4911,237.3158) .. controls (518.4911,263.1743) and
+	      (539.4804,284.1231) .. (565.3389,284.1231) .. controls (591.1974,284.1231) and
+	      (612.1462,263.1743) .. (612.1462,237.3158) .. controls (612.1462,215.3233) and
+	      (596.9939,196.8355) .. (576.5548,191.8042) -- (606.5180,161.8816) -- cycle;
+	    \begin{scope}[cm={{-1.0,0.0,0.0,-1.0,(1130.6373,475.18252)}}]
+	      \path[color=black,fill=black,even odd rule,line width=16.000pt]
+		(565.3389,208.6889) .. controls (549.5365,208.6889) and (536.7120,221.5134) ..
+		(536.7120,237.3158) .. controls (536.7120,249.4467) and (544.2722,259.8031) ..
+		(554.9328,263.9587) -- (554.9328,252.2164) .. controls (550.2090,248.9346) and
+		(547.1181,243.5056) .. (547.1181,237.3158) .. controls (547.1181,227.2597) and
+		(555.2828,219.0950) .. (565.3389,219.0950) .. controls (575.3950,219.0950) and
+		(583.5192,227.2597) .. (583.5192,237.3158) .. controls (583.5192,243.4955) and
+		(580.4441,248.9328) .. (575.7450,252.2164) -- (575.7450,263.9587) .. controls
+		(586.3945,259.8031) and (593.9253,249.4467) .. (593.9253,237.3158) .. controls
+		(593.9253,221.5134) and (581.1413,208.6889) .. (565.3389,208.6889) -- cycle;
+	      \path[color=black,fill=black,even odd rule,line width=16.000pt]
+		(565.3389,232.0925) .. controls (562.4657,232.0925) and (560.1156,234.4426) ..
+		(560.1156,237.3158) -- (560.1156,268.4937) -- (570.5217,268.4937) --
+		(570.5217,237.3158) .. controls (570.5217,234.4426) and (568.2121,232.0925) ..
+		(565.3389,232.0925) -- cycle;
+	    \end{scope}
+	    \path[fill=black] (630.8529,149.4914) .. controls (625.1306,149.5458) and
+	      (620.4890,150.3447) .. (619.3535,151.0301) .. controls (617.0825,152.4009) and
+	      (616.5461,155.6877) .. (617.2480,156.4558) .. controls (617.9500,157.2237) and
+	      (628.6785,164.1143) .. (633.3633,166.3761) .. controls (645.9778,172.4665) and
+	      (632.0756,195.7720) .. (621.2161,191.6018) .. controls (613.5199,188.6464) and
+	      (604.7892,179.8446) .. (603.3192,179.7785) .. controls (601.8492,179.7137) and
+	      (599.9557,180.7048) .. (599.4726,183.2607) .. controls (598.9895,185.8166) and
+	      (602.4810,198.1576) .. (611.2554,207.7576) .. controls (621.7846,219.2778) and
+	      (638.1817,206.5491) .. (638.1817,217.0704) --
+	      (638.1817,265.9427)arc(179.961:0.039:13.018) -- (664.2172,203.5060) --
+	      (664.2172,188.9294) .. controls (664.2172,183.4623) and (670.9201,161.5406) ..
+	      (648.7498,152.3663) .. controls (643.3754,150.1424) and (636.5752,149.4370) ..
+	      (630.8529,149.4914) -- cycle;
+	  \end{scope}
+	  \path[color=black,fill=black,even odd rule,line width=8.333pt]
+	    (150.0000,23.1213) .. controls (79.9291,23.1213) and (23.1213,79.9291) ..
+	    (23.1213,150.0000) .. controls (23.1213,220.0708) and (79.9291,276.8787) ..
+	    (150.0000,276.8787) .. controls (220.0708,276.8787) and (276.8787,220.0708) ..
+	    (276.8787,150.0000) .. controls (276.8787,79.9291) and (220.0708,23.1213) ..
+	    (150.0000,23.1213) -- cycle(150.0000,40.5068) .. controls (210.4603,40.5068)
+	    and (259.4540,89.5397) .. (259.4540,150.0000) .. controls (259.4540,210.4603)
+	    and (210.4603,259.4540) .. (150.0000,259.4540) .. controls (89.5278,259.8428)
+	    and (41.3547,203.5210) .. (40.5068,150.0000) .. controls (40.5068,89.5397) and
+	    (89.5397,40.5068) .. (150.0001,40.5068) -- cycle;
+	  \end{tikzpicture}
+	  %% Logo End
+}
+
 
 \ExecuteOptions{11pt,@sprache} \ProcessOptions
 \LoadClass[1\@schrift pt, a4paper, oneside, final]{letter}[1999/04/29]
@@ -302,6 +369,7 @@
 \newif\ifunserzeichen\unserzeichenfalse
 \def\unserzeichen{\unserzeichentrue}
 
+
 \newenvironment{g-brief}{
   \thispagestyle{firstpage}
   \setlength\unitlength{1mm}
@@ -365,71 +433,7 @@
   \def\@oddhead{
     \unitlength1mm
     \begin{picture}(0,0)
-      \put(-9, 2){\parbox{180mm}{
-	  %% Inline Logo
-	  \begin{tikzpicture}[
-	      y=0.8pt, 
-	      x=0.8pt, 
-	      yscale=-1, 
-	      inner sep=0pt, 
-	      outer sep=0pt, 
-	      scale=0.2
-	  ]
-	  \begin{scope}[shift={(-448.05262,-67.70133)}]
-	    \path[color=black,fill=black,even odd rule,line width=16.000pt]
-	      (534.1205,161.8816) -- (534.1205,172.2877) -- (581.3732,172.2877) .. controls
-	      (571.8452,181.8308) and (562.3036,191.3603) .. (552.7463,200.8741) --
-	      (565.3389,200.8741) .. controls (585.4511,200.8741) and (601.7400,217.2036) ..
-	      (601.7400,237.3158) .. controls (601.7400,257.4280) and (585.4511,273.7170) ..
-	      (565.3389,273.7170) .. controls (545.2267,273.7170) and (528.8972,257.4280) ..
-	      (528.8972,237.3158) -- (518.4911,237.3158) .. controls (518.4911,263.1743) and
-	      (539.4804,284.1231) .. (565.3389,284.1231) .. controls (591.1974,284.1231) and
-	      (612.1462,263.1743) .. (612.1462,237.3158) .. controls (612.1462,215.3233) and
-	      (596.9939,196.8355) .. (576.5548,191.8042) -- (606.5180,161.8816) -- cycle;
-	    \begin{scope}[cm={{-1.0,0.0,0.0,-1.0,(1130.6373,475.18252)}}]
-	      \path[color=black,fill=black,even odd rule,line width=16.000pt]
-		(565.3389,208.6889) .. controls (549.5365,208.6889) and (536.7120,221.5134) ..
-		(536.7120,237.3158) .. controls (536.7120,249.4467) and (544.2722,259.8031) ..
-		(554.9328,263.9587) -- (554.9328,252.2164) .. controls (550.2090,248.9346) and
-		(547.1181,243.5056) .. (547.1181,237.3158) .. controls (547.1181,227.2597) and
-		(555.2828,219.0950) .. (565.3389,219.0950) .. controls (575.3950,219.0950) and
-		(583.5192,227.2597) .. (583.5192,237.3158) .. controls (583.5192,243.4955) and
-		(580.4441,248.9328) .. (575.7450,252.2164) -- (575.7450,263.9587) .. controls
-		(586.3945,259.8031) and (593.9253,249.4467) .. (593.9253,237.3158) .. controls
-		(593.9253,221.5134) and (581.1413,208.6889) .. (565.3389,208.6889) -- cycle;
-	      \path[color=black,fill=black,even odd rule,line width=16.000pt]
-		(565.3389,232.0925) .. controls (562.4657,232.0925) and (560.1156,234.4426) ..
-		(560.1156,237.3158) -- (560.1156,268.4937) -- (570.5217,268.4937) --
-		(570.5217,237.3158) .. controls (570.5217,234.4426) and (568.2121,232.0925) ..
-		(565.3389,232.0925) -- cycle;
-	    \end{scope}
-	    \path[fill=black] (630.8529,149.4914) .. controls (625.1306,149.5458) and
-	      (620.4890,150.3447) .. (619.3535,151.0301) .. controls (617.0825,152.4009) and
-	      (616.5461,155.6877) .. (617.2480,156.4558) .. controls (617.9500,157.2237) and
-	      (628.6785,164.1143) .. (633.3633,166.3761) .. controls (645.9778,172.4665) and
-	      (632.0756,195.7720) .. (621.2161,191.6018) .. controls (613.5199,188.6464) and
-	      (604.7892,179.8446) .. (603.3192,179.7785) .. controls (601.8492,179.7137) and
-	      (599.9557,180.7048) .. (599.4726,183.2607) .. controls (598.9895,185.8166) and
-	      (602.4810,198.1576) .. (611.2554,207.7576) .. controls (621.7846,219.2778) and
-	      (638.1817,206.5491) .. (638.1817,217.0704) --
-	      (638.1817,265.9427)arc(179.961:0.039:13.018) -- (664.2172,203.5060) --
-	      (664.2172,188.9294) .. controls (664.2172,183.4623) and (670.9201,161.5406) ..
-	      (648.7498,152.3663) .. controls (643.3754,150.1424) and (636.5752,149.4370) ..
-	      (630.8529,149.4914) -- cycle;
-	  \end{scope}
-	  \path[color=black,fill=black,even odd rule,line width=8.333pt]
-	    (150.0000,23.1213) .. controls (79.9291,23.1213) and (23.1213,79.9291) ..
-	    (23.1213,150.0000) .. controls (23.1213,220.0708) and (79.9291,276.8787) ..
-	    (150.0000,276.8787) .. controls (220.0708,276.8787) and (276.8787,220.0708) ..
-	    (276.8787,150.0000) .. controls (276.8787,79.9291) and (220.0708,23.1213) ..
-	    (150.0000,23.1213) -- cycle(150.0000,40.5068) .. controls (210.4603,40.5068)
-	    and (259.4540,89.5397) .. (259.4540,150.0000) .. controls (259.4540,210.4603)
-	    and (210.4603,259.4540) .. (150.0000,259.4540) .. controls (89.5278,259.8428)
-	    and (41.3547,203.5210) .. (40.5068,150.0000) .. controls (40.5068,89.5397) and
-	    (89.5397,40.5068) .. (150.0001,40.5068) -- cycle;
-	  \end{tikzpicture}
-	  %% Logo End
-      }}
+      \put(-9, 2){\parbox{180mm}{\n39logo}}
       \put(8,1){\parbox{180mm}{ \huge \name}}
       %\put(-9, 3){\parbox{180mm}{\huge \name %\\ \normalsize \ifklassisch \textsl{
 %             \strasse \quad \\ \ifx \zusatz\empty \else
@@ -457,7 +461,7 @@
 %       }}
 %       \put(128,-32){\parbox{180mm}{
 %        \begin{tabular}{ll}
-%        \vorstandtext & \underline\vorstand \\    
+%        \vorstandtext & \underline\vorstand \\
 %         {} & \vertreter \\
 %         {} & \kassenwart
 %        \end{tabular}
@@ -491,7 +495,7 @@
           \begin{tabular}{ll}
             \vorstandtext & \vorsitz \\
              & \vertreter   \\
-             & \kassenwart 
+             & \kassenwart
             %\ifx \telefon\empty \else \telefontex & \telefon \\ \fi \ifx
             %\telefax\empty \else \telefaxtext & \telefax \\ \fi \ifx
             %\telex\empty \else \telextext & \telex \\ \fi \ifx
@@ -512,10 +516,10 @@
 
 \def\ps@regularpage{ \headheight36pt\def\@oddhead{\unitlength1mm
     \begin{picture}(0,0)
-      \put(-5,5){\makebox(10,10){\includegraphics[width=0.075\textwidth]{logo/logo_final}}\hfill}
-      \put(4.5,2){\makebox(170,15){\normalsize \ifklassisch 
+      \put(-5,5){\makebox(10,10){\n39logo}\hfill}
+      \put(4.5,2){\makebox(170,15){\normalsize \ifklassisch
         {\Large\quad}\name\hfill\datum\hfill\pagename\ \thepage\quad
-        \else 
+        \else
         {\Large\quad}\name\hfill\datum\hfill\pagename\
         \thepage\quad} \fi}
       \iftrennlinien \put(-9,0){\rule{180mm}{0.5pt}} \fi
@@ -567,21 +571,21 @@
  \RetourAdresse       {}
  \Ort                 {39104 Magdeburg}
  \Land                {}
- 
+
  \Telefon             {+49\ 391\ 58245281}
  \Telefax             {}
  \Telex               {}
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
- 
- \Vorsitz             {Sebastian Hichert}
- \Vertreter           {Tatjana Böttger}
- \Kassenwart          {David Kilias}
- 
+
+ \Vorsitz             {Sebastian Heerwald}
+ \Vertreter           {Tatjana Ruhl}
+ \Kassenwart          {Oskar Kirmis}
+
  \Bank                {Volksbank Magdeburg eG}
  \IBAN                {DE71\ 8109\ 3274\ 0001\ 4424\ 81}
  \BIC                 {GENODEF1MD1}
- 
+
  \Registergericht     {Amtsgericht Stendal}
  \Registernummer      {VR\ 3169}
  \Umsatzsteuerid      {}
@@ -590,5 +594,5 @@
 
 %%
 %% End defs netz39
- 
+
 \endinput
