@@ -578,9 +578,9 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
 
- \Vorsitz             {Sebastian Heerwald}
- \Vertreter           {Tatjana Ruhl}
- \Kassenwart          {Oskar Kirmis}
+ \Vorsitz             {Benjamin Hatscher}
+ \Vertreter           {Franz Kuntke}
+ \Kassenwart          {David Kilias}
 
  \Bank                {Volksbank Magdeburg eG}
  \IBAN                {DE71\ 8109\ 3274\ 0001\ 4424\ 81}
