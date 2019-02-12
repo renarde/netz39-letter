@@ -555,12 +555,6 @@
 %%
 %% End of file `g-brief.cls'.
 
-
-
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% Begin defs netz39
@@ -578,8 +572,8 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
 
- \Vorsitz             {Benjamin Hatscher}
- \Vertreter           {Franz Kuntke}
+ \Vorsitz             {Keywan Tonekaboni}
+ \Vertreter           {Oskar Kirmis}
  \Kassenwart          {David Kilias}
 
  \Bank                {Volksbank Magdeburg eG}
