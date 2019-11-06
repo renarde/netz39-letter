@@ -572,13 +572,13 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
 
- \Vorsitz             {Keywan Tonekaboni}
- \Vertreter           {Oskar Kirmis}
+ \Vorsitz             {Stefan Haun}
+ \Vertreter           {Rick Hollinski}
  \Kassenwart          {David Kilias}
 
- \Bank                {Volksbank Magdeburg eG}
- \IBAN                {DE71\ 8109\ 3274\ 0001\ 4424\ 81}
- \BIC                 {GENODEF1MD1}
+ \Bank                {GLS Gemeinschaftsbank eG}
+ \IBAN                {DE64\ 4306\ 0967\ 4120\ 8043\ 00}
+ \BIC                 {GENODEM1GLS}
 
  \Registergericht     {Amtsgericht Stendal}
  \Registernummer      {VR\ 3169}
