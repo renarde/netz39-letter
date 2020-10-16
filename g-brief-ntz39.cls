@@ -572,9 +572,9 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
 
- \Vorsitz             {Stefan Haun}
- \Vertreter           {Rick Hollinski}
- \Kassenwart          {David Kilias}
+ \Vorsitz             {Rick Hollinski}
+ \Vertreter           {Maximilian Deubel}
+ \Kassenwart          {Michael Albrecht}
 
  \Bank                {GLS Gemeinschaftsbank eG}
  \IBAN                {DE64\ 4306\ 0967\ 4120\ 8043\ 00}
