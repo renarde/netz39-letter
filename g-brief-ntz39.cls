@@ -573,7 +573,7 @@
  \EMail               {kontakt@netz39.de}
 
  \Vorsitz             {Rick Hollinski}
- \Vertreter           {Maximilian Deubel}
+ \Vertreter           {Maximilian Grau}
  \Kassenwart          {Michael Albrecht}
 
  \Bank                {GLS Gemeinschaftsbank eG}
