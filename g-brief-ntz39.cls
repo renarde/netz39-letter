@@ -572,8 +572,8 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
 
- \Vorsitz             {Rick Hollinski}
- \Vertreter           {Maximilian Grau}
+ \Vorsitz             {Maximilian Grau}
+ \Vertreter           {Timo Herrmann}
  \Kassenwart          {Michael Albrecht}
 
  \Bank                {GLS Gemeinschaftsbank eG}
