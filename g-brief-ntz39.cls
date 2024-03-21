@@ -572,9 +572,9 @@
  \HTTP                {http://www.netz39.de}
  \EMail               {kontakt@netz39.de}
 
- \Vorsitz             {Maximilian Grau}
- \Vertreter           {Timo Herrmann}
- \Kassenwart          {Michael Albrecht}
+ \Vorsitz             {Timo Herrmann}
+ \Vertreter           {Rick Hollinski}
+ \Kassenwart          {Johannes Müller}
 
  \Bank                {GLS Gemeinschaftsbank eG}
  \IBAN                {DE64\ 4306\ 0967\ 4120\ 8043\ 00}
